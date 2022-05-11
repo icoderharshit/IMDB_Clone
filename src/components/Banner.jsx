@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from "axios";
+import "./Banner.css"
 function Banner() {
     let [movie,setMovie]=useState([]);
     useEffect(()=>{
@@ -10,12 +11,12 @@ function Banner() {
     return <>
         <div className=
         {`bg-[url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})] h-[40vh] md:h-[60vh] 
-        bg-center bg-cover
+        bg-center bg-cover banner
         flex items-end  
     `}>
         <div className=" text-xl md:text-3xl text-white
-            p-6 
-            bg-gray-900 bg-opacity-50
+            p-3 title
+            bg-gray-900 bg-opacity-40
             w-full
             flex justify-center
         ">

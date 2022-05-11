@@ -1,0 +1,7 @@
+.banner:hover .title{
+    opacity: 0.9;
+    background-color: rgb(26, 26, 26);
+}
+.title{
+    transition: 0.2s ease-in-out;
+}
